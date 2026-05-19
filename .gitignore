@@ -1,0 +1,32 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Large data / outputs (not stored in atlas)
+data/raw/
+data/processed/
+*.bam
+*.fastq.gz
+*.h5ad
+results/
+output/
+
+# Docker
+*.tar
