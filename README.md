@@ -37,8 +37,14 @@
 48개 메소드 모두 1-pager 작성됨 (`methods/11-58.md`).
 다음 단계: Docker 재현 데모 (각 메소드 + 공개 데이터 + `make demo`).
 
-## Tier 3 — Long-tail (향후)
-T2T assembly, pangenome graphs, Stereo-seq, MERFISH/Xenium, cryo-EM, MD simulation, deep multi-omics integration 등.
+## Tier 3 — 1-pager 완료 (30/30 ✅)
+
+30개 long-tail / 고난도 메소드 1-pager 작성됨 (`methods/59-88.md`):
+T2T assembly, pangenome graphs, RNA editing/structure, nascent transcription, RNA stability, Perturb-seq, lineage tracing, sc-WGBS, Stereo-seq, MERFISH, Xenium/CosMx, HiChIP/ChIA-PET, DamID, ATAC footprinting, XL-MS, top-down proteomics, NMR, isotope tracing, strain-level/metatranscriptomics, SNF/Bayesian/deep multi-omics, ESMFold, P-P docking, P-L docking, MD, cryo-EM, niche detection.
+
+## v1.0 — **88/88** 메소드 모두 1-pager 완료 🎉
+
+다음 단계: Tier 1+2 우선 Docker 재현 데모 (각 메소드 `make demo` 1-command 재현 가능 증명).
 
 전체 인벤토리: [CATEGORIES.md](CATEGORIES.md)
 
@@ -63,4 +69,5 @@ T2T assembly, pangenome graphs, Stereo-seq, MERFISH/Xenium, cryo-EM, MD simulati
 ---
 
 **작성자**: Replisci (shoo99@gmail.com)
-**라이선스**: 메소드 카탈로그 자체는 CC BY-SA 4.0, 데모 코드는 MIT
+**라이선스**: 메소드 카탈로그 자체는 CC BY-SA 4.0, 데모 코드는 MIT ([LICENSE](LICENSE))
+**저장소**: https://github.com/[user]/replisci-methods-atlas (사용자가 직접 push 예정)
