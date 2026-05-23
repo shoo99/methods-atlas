@@ -1,0 +1,177 @@
+site_name: Replisci Methods Atlas
+site_description: Open catalog of 88 reproducible bioinformatics analysis methods — input, pipeline, tools+versions, output, Docker reproducibility, public demo dataset, limitations, QC, references.
+site_url: https://shoo99.github.io/methods-atlas/
+site_author: Replisci
+
+repo_url: https://github.com/shoo99/methods-atlas
+repo_name: shoo99/methods-atlas
+edit_uri: edit/main/docs/
+
+copyright: >
+  Replisci · Documentation under
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>,
+  code under MIT.
+
+theme:
+  name: material
+  language: en
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+plugins:
+  - search:
+      lang:
+        - en
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/shoo99/methods-atlas
+    - icon: fontawesome/solid/globe
+      link: https://replisci-landing-v2.vercel.app
+  generator: false
+
+nav:
+  - Home: index.md
+  - All Methods (88): categories.md
+  - Tier 1 — Priority (10):
+      - "01. Bulk RNA-seq Differential Expression": methods/01-bulk-rnaseq-de.md
+      - "02. Single-cell RNA-seq": methods/02-scrnaseq.md
+      - "03. ATAC-seq (Chromatin Accessibility)": methods/03-atacseq.md
+      - "04. ChIP-seq (Protein–DNA Binding)": methods/04-chipseq.md
+      - "05. 16S rRNA Microbiome Profiling": methods/05-16s-microbiome.md
+      - "06. WES / WGS Variant Calling": methods/06-wes-wgs-variant.md
+      - "07. De novo Genome Assembly (Long-read)": methods/07-denovo-genome.md
+      - "08. De novo Transcriptome Assembly": methods/08-denovo-transcriptome.md
+      - "09. GSEA / Pathway Enrichment Analysis": methods/09-gsea-pathway.md
+      - "10. DNA Methylation (Bisulfite-seq / EPIC array)": methods/10-methylation.md
+  - Tier 2 — Specialized (48):
+      - "11. Single-cell ATAC-seq & Multiome (snRNA + snATAC)": methods/11-scatac-multiome.md
+      - "12. Copy Number Variation (CNV) Detection": methods/12-cnv-detection.md
+      - "13. Structural Variant Detection (Long-read)": methods/13-long-read-sv.md
+      - "14. CUT&RUN / CUT&Tag (Low-input Profiling)": methods/14-cut-and-run.md
+      - "15. Shotgun Metagenomics & MAGs": methods/15-shotgun-metagenomics.md
+      - "16. Isoform / Alternative Splicing Analysis": methods/16-isoform-splicing.md
+      - "17. Gene Fusion Detection": methods/17-fusion-detection.md
+      - "18. HLA Typing": methods/18-hla-typing.md
+      - "19. CITE-seq (Single-cell RNA + Surface Protein)": methods/19-cite-seq.md
+      - "20. Single-cell Trajectory / Pseudotime Analysis": methods/20-trajectory-analysis.md
+      - "21. Cell–Cell Interaction (CCI) Inference": methods/21-cell-cell-interaction.md
+      - "22. Visium Spatial Transcriptomics": methods/22-visium-spatial.md
+      - "23. DDA Shotgun Proteomics (Mass Spectrometry)": methods/23-dda-proteomics.md
+      - "24. DIA-MS Proteomics (Data-Independent Acquisition)": methods/24-dia-proteomics.md
+      - "25. Untargeted LC-MS Metabolomics": methods/25-lcms-metabolomics.md
+      - "26. WGCNA — Weighted Gene Co-expression Network Analysis": methods/26-wgcna.md
+      - "27. TF Regulon / Gene Regulatory Network Inference": methods/27-tf-regulon.md
+      - "28. Genome-Wide Association Study (GWAS)": methods/28-gwas.md
+      - "29. Cancer Mutational Signatures": methods/29-mutational-signatures.md
+      - "30. AlphaFold Protein Structure Prediction": methods/30-alphafold.md
+      - "31. Polygenic Risk Score (PRS)": methods/31-prs.md
+      - "32. Phylogenomics & Population Genomics": methods/32-phylogenomics-popgen.md
+      - "33. TCR / BCR Immune Repertoire Analysis": methods/33-tcr-bcr-repertoire.md
+      - "34. Long-read RNA-seq (Iso-Seq / ONT Direct cDNA / Direct RNA)": methods/34-long-read-rna.md
+      - "35. Small RNA-seq (miRNA, piRNA, tRF)": methods/35-small-rna.md
+      - "36. circRNA Detection": methods/36-circrna.md
+      - "37. Ribo-seq (Translation Profile)": methods/37-ribo-seq.md
+      - "38. Reference Atlas Mapping (Single-cell)": methods/38-atlas-reference-mapping.md
+      - "39. Spatial Deconvolution (Spot → Cell Type Mapping)": methods/39-spatial-deconvolution.md
+      - "40. Hi-C / Micro-C (3D Genome Organization)": methods/40-hic-3d-genome.md
+      - "41. TF Motif Analysis": methods/41-tf-motif.md
+      - "42. Chromatin State Segmentation (ChromHMM / Segway)": methods/42-chromhmm-state.md
+      - "43. PTM Proteomics (Phospho / Ubiq / Acetyl)": methods/43-ptm-proteomics.md
+      - "44. TMT / iTRAQ Multiplexed Quantitative Proteomics": methods/44-tmt-multiplex.md
+      - "45. Affinity Pull-down MS (AP-MS / IP-MS / TurboID)": methods/45-affinity-pulldown.md
+      - "46. Olink / SomaScan / Antibody Arrays (Targeted Proteome)": methods/46-olink-antibody-array.md
+      - "47. Targeted LC-MS / MRM Metabolomics": methods/47-targeted-metabolomics.md
+      - "48. Lipidomics": methods/48-lipidomics.md
+      - "49. ITS Fungal Amplicon Profiling": methods/49-its-fungal.md
+      - "50. Antibiotic Resistance Gene (ARG) Profiling": methods/50-arg-profiling.md
+      - "51. Virome (DNA / RNA Viruses)": methods/51-virome.md
+      - "52. MOFA+ Multi-omics Factor Analysis": methods/52-mofa-multiomics.md
+      - "53. DIABLO Multi-omics Integration (Supervised)": methods/53-diablo-multiomics.md
+      - "54. Drug–Gene Interaction & Repurposing": methods/54-drug-gene-repurposing.md
+      - "55. Protein-Protein Interaction (PPI) Network Analysis": methods/55-ppi-network.md
+      - "56. Cancer Driver Gene Detection": methods/56-cancer-driver.md
+      - "57. Survival / Clinical Association Analysis": methods/57-survival-clinical.md
+      - "58. Bulk Cell-type Deconvolution": methods/58-cell-type-deconvolution.md
+  - Tier 3 — Long-tail (30):
+      - "59. Tandem Repeat / STR Genotyping": methods/59-tandem-repeat-str.md
+      - "60. Pangenome Graph Construction": methods/60-pangenome.md
+      - "61. Telomere-to-Telomere (T2T) Assembly": methods/61-t2t-assembly.md
+      - "62. RNA Editing (A-to-I, C-to-U)": methods/62-rna-editing.md
+      - "63. RNA Secondary Structure (SHAPE, icSHAPE, DMS-MaP)": methods/63-rna-structure.md
+      - "64. Nascent Transcription (GRO-seq / PRO-seq / NET-seq)": methods/64-nascent-transcription.md
+      - "65. RNA Stability / Decay (SLAM-seq, BRIC-seq, 4sU-seq)": methods/65-rna-stability.md
+      - "66. Perturb-seq / CRISPR Screen scRNA-seq": methods/66-perturb-seq.md
+      - "67. Single-cell Lineage Tracing (CellTagging, MARC1, LARRY)": methods/67-lineage-tracing.md
+      - "68. Single-cell DNA Methylation (sc-WGBS / sciMET)": methods/68-sc-methylation.md
+      - "69. Stereo-seq (BGI High-resolution Spatial)": methods/69-stereo-seq.md
+      - "70. MERFISH / seqFISH (Imaging-based Spatial)": methods/70-merfish-imaging.md
+      - "71. Xenium (10x) / CosMx (NanoString) Imaging Spatial": methods/71-xenium-cosmx.md
+      - "72. HiChIP / ChIA-PET (Protein-specific 3D Genome)": methods/72-hichip-chiapet.md
+      - "73. DamID / TaDa (Tissue-specific Chromatin)": methods/73-damid-tada.md
+      - "74. ATAC-seq Footprinting (TF Binding Inference)": methods/74-atac-footprinting.md
+      - "75. Cross-linking Mass Spectrometry (XL-MS)": methods/75-xlms-crosslinking.md
+      - "76. Top-down Proteomics": methods/76-top-down-proteomics.md
+      - "77. NMR Metabolomics": methods/77-nmr-metabolomics.md
+      - "78. Stable Isotope Tracing (¹³C MFA)": methods/78-isotope-tracing.md
+      - "79. Strain-level Microbiome Analysis": methods/79-strain-level-microbiome.md
+      - "80. Metatranscriptomics": methods/80-metatranscriptomics.md
+      - "81. Similarity Network Fusion & Bayesian Multi-omics": methods/81-snf-bayesian-integration.md
+      - "82. Deep Learning Multi-omics Integration": methods/82-deep-multiomics.md
+      - "83. ESMFold / OmegaFold (Single-sequence Structure)": methods/83-esmfold-omegafold.md
+      - "84. Protein–Protein Docking": methods/84-protein-protein-docking.md
+      - "85. Protein–Ligand Docking (Small Molecule)": methods/85-protein-ligand-docking.md
+      - "86. Molecular Dynamics (MD) Simulation": methods/86-molecular-dynamics.md
+      - "87. Cryo-EM Single Particle Analysis": methods/87-cryoem-particle.md
+      - "88. Spatial Niche / Domain Detection": methods/88-niche-domain-detection.md

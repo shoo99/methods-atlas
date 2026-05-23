@@ -30,3 +30,7 @@ output/
 
 # Docker
 *.tar
+
+# MkDocs build output
+site/
+.venv/
